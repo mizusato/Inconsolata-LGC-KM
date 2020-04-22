@@ -1,26 +1,27 @@
-SplineFontDB: 3.0
-FontName: InconsolataLGC
-FullName: Inconsolata LGC
-FamilyName: Inconsolata LGC
+SplineFontDB: 3.2
+FontName: InconsolataLGCKM
+FullName: Inconsolata LGC KM
+FamilyName: Inconsolata LGC KM
 Weight: Regular
-Copyright: Original Roman version created by Raph Levien using his own tools and FontForge. Copyright 2006 Raph Levien. Hellenisation of the Roman font, by Dimosthenis Kaponis, using FontForge. Hellenic glyphs Copyright 2010-2012 Dimosthenis Kaponis. Released under the SIL Open Font License, http://scripts.sil.org/OFL.\n\nCyrillic glyphs added by MihailJP, using FontForge. Cyrillic glyphs Copyright 2012 MihailJP. Released under the SIL Open Font License, http://scripts.sil.org/OFL.\n\nSome glyphs modified by Greg Omelaenko, using FontForge.
-UComments: "2005-8-26: Created." 
+Copyright: Original Roman version created by Raph Levien using his own tools and FontForge. Copyright 2006 Raph Levien. Hellenisation of the Roman font, by Dimosthenis Kaponis, using FontForge. Hellenic glyphs Copyright 2010-2012 Dimosthenis Kaponis. Released under the SIL Open Font License, http://scripts.sil.org/OFL.\n\nSome modifications made by mizusato, using FontForge.\n\nCyrillic glyphs added by MihailJP, using FontForge. Cyrillic glyphs Copyright 2012 MihailJP. Released under the SIL Open Font License, http://scripts.sil.org/OFL.\n\nSome glyphs modified by Greg Omelaenko, using FontForge.
+UComments: "2005-8-26: Created."
 Version: 1.3
 ItalicAngle: 0
 UnderlinePosition: -101
 UnderlineWidth: 50
 Ascent: 840
 Descent: 184
+InvalidEm: 0
 LayerCount: 2
-Layer: 0 0 "Back"  1
-Layer: 1 0 "Fore"  0
+Layer: 0 0 "Back" 1
+Layer: 1 0 "Fore" 0
 XUID: [1021 77 1780377399 11264577]
 FSType: 8
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1161020814
-ModificationTime: 1459702004
+ModificationTime: 1587567984
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -41,11 +42,11 @@ HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
-Lookup: 1 0 0 "Polish kreska forms"  {"Polish kreska forms-1" ("pl" ) } ['locl' ('latn' <'PLK ' > ) ]
-Lookup: 1 0 0 "Romanian comma accent"  {"Romanian comma accent-1"  } ['locl' ('latn' <'MOL ' 'ROM ' > ) ]
+Lookup: 1 0 0 "Polish kreska forms" { "Polish kreska forms-1" ("pl") } ['locl' ('latn' <'PLK ' > ) ]
+Lookup: 1 0 0 "Romanian comma accent" { "Romanian comma accent-1"  } ['locl' ('latn' <'MOL ' 'ROM ' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
-LangName: 1033 
+LangName: 1033
 Encoding: UnicodeBmp
 Compacted: 1
 UnicodeInterp: none
@@ -53,7 +54,7 @@ NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 32 16 4
+WinInfo: 32 8 2
 BeginPrivate: 6
 BlueValues 31 [-14 0 542 555 739 748 767 796]
 OtherBlues 11 [-206 -198]
@@ -64,26 +65,26 @@ StdVW 4 [86]
 EndPrivate
 Grid
 358 1352 m 0
- 358 -696 l 0
+ 358 -696 l 1024
 548.352 1351.68 m 0
- 548.352 -696.32 l 0
+ 548.352 -696.32 l 1024
 65.0244 1351.68 m 0
- 65.0244 -696.32 l 0
+ 65.0244 -696.32 l 1024
 -1024 315.392 m 0
- 2048 315.392 l 0
+ 2048 315.392 l 1024
 -1024 1079.3 m 0
- 2048 1079.3 l 0
+ 2048 1079.3 l 1024
 -1024 740.352 m 0
- 2048 740.352 l 0
-  Named: "capitals" 
+ 2048 740.352 l 1024
+  Named: "capitals"
 -1024 768 m 0
- 2048 768 l 0
+ 2048 768 l 1024
 -1024 553.984 m 0
- 2048 553.984 l 0
+ 2048 553.984 l 1024
 159.744 1351.68 m 0
- 159.744 -696.32 l 0
+ 159.744 -696.32 l 1024
 172.032 939.008 m 25
- 416.256 939.008 l 25
+ 416.256 939.008 l 1049
 EndSplineSet
 TeXData: 1 0 0 629145 314572 209715 554697 1048576 209715 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 BeginChars: 65556 883
@@ -1497,41 +1498,26 @@ EndChar
 StartChar: ampersand
 Encoding: 38 38 53
 Width: 613
-Flags: MW
+Flags: HMW
 TeX: 80 0
 LayerCount: 2
 Fore
 SplineSet
-282 746 m 0
- 371 746 440 680 440 589 c 0
- 440 511 389 433 312 391 c 0
- 445 206 l 0
- 473 239 490 273 499 301 c 0
- 500 304 500 307 500 310 c 0
- 500 315 499 320 499 325 c 0
- 499 331 501 334 504 337 c 0
- 581 284 l 0
- 554 236 523 189 490 145 c 0
- 573 38 l 0
- 504 -14 l 0
- 438 90 l 0
- 391 32 318 -12 238 -12 c 0
- 132 -12 53 67 53 173 c 0
- 53 264 112 357 203 407 c 0
- 159 460 119 526 119 591 c 0
- 119 680 192 746 282 746 c 0
-201 589 m 0
- 201 558 213 516 272 442 c 0
- 327 472 362 529 362 583 c 0
- 362 639 324 676 280 676 c 0
- 238 676 201 641 201 589 c 0
-244 351 m 0
- 181 310 143 243 143 182 c 0
- 143 113 190 63 251 63 c 0
- 330 63 395 146 395 146 c 0
- 244 351 l 0
+308 507 m 1
+ 290 603 246 704 174 714 c 0
+ 169 715 165 715 160 715 c 0
+ 136 715 117 707 115 707 c 0
+ 113 788 l 1
+ 132 788 153 789 168 789 c 0
+ 169 789 l 0
+ 343 789 370 589 406 468 c 1
+ 456 309 552 18 578 -0 c 1
+ 578 -0 488 0 485 0 c 1
+ 457 56 353 379 342 400 c 1
+ 116 0 l 1
+ 34 0 l 1
+ 308 507 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: F
@@ -2453,18 +2439,21 @@ EndChar
 StartChar: bar
 Encoding: 124 124 88
 Width: 613
-Flags: MW
+VWidth: 1046
+Flags: HMW
 TeX: 100 0
 LayerCount: 2
 Fore
 SplineSet
-267 774 m 0
- 347 774 l 0
- 347 -179 l 0
- 267 -179 l 0
- 267 774 l 0
+378 327 m 1
+ 153 439 l 1
+ 153 215 l 1
+ 378 327 l 1
+531 327 m 1
+ 82 102 l 1
+ 82 552 l 1
+ 531 327 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: asciitilde
@@ -18114,7 +18103,7 @@ EndChar
 StartChar: uni2016
 Encoding: 8214 8214 850
 Width: 613
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 Refer: 88 124 N 1 0 0 1 100 0 2

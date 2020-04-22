@@ -1,18 +1,17 @@
-Inconsolata LGC
+Inconsolata LGC KM
 ---------------
 
-Inconsolata is one of the most suitable font for programmers created by Raph
-Levien. Since the original Inconsolata does not contain Cyrillic alphabet,
-it was slightly inconvenient for not a few programmers from Russia.
+Inconsolata LGC KM is a modified version of Inconsolata LGC with some
+characters changed for the KumaChan programming language (experimental).
 
-Inconsolata LGC is a modified version of Inconsolata with added the Cyrillic
-alphabet which directly descends from Inconsolata Hellenic supporting modern
-Greek.
-
-Inconsolata LGC is licensed under SIL OFL.
+Inconsolata LGC KM is licensed under SIL OFL.
 
 
-Inconsolata LGC changes:
+Inconsolata LGC KM changes:
+* Ampersand '&' replaced by U+03bb 'λ'
+* Vertical Line '|' replaced by U+25b7 '▷'
+
+Changes inherited from Inconsolata LGC:
 * Cyrillic glyphs added.
 * Italic and Bold font added.
 
