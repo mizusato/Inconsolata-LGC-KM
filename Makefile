@@ -1,12 +1,12 @@
 # Makefile for Inconsolata font
 
-FONTS=Inconsolata-LGC.ttf \
-      Inconsolata-LGC-Bold.ttf \
-      Inconsolata-LGC-Italic.ttf \
-      Inconsolata-LGC-BoldItalic.ttf
+FONTS=Inconsolata-LGC-KM.ttf \
+      Inconsolata-LGC-KM-Bold.ttf \
+      Inconsolata-LGC-KM-Italic.ttf \
+      Inconsolata-LGC-KM-BoldItalic.ttf
 OTFONTS=${FONTS:.ttf=.otf}
 DOCUMENTS=README ChangeLog LICENSE
-PKGS=InconsolataLGC.tar.xz InconsolataLGC-OT.tar.xz
+PKGS=InconsolataLGCKM.tar.xz InconsolataLGCKM-OT.tar.xz
 FFCMD=for i in $?;do fontforge -lang=ff -c "Open(\"$$i\");Generate(\"$@\");Close()";done
 TTFPKGCMD=rm -rf $*; mkdir $*; cp ${FONTS} ${DOCUMENTS} $*
 OTFPKGCMD=rm -rf $*; mkdir $*; cp ${OTFONTS} ${DOCUMENTS} $*
@@ -29,22 +29,22 @@ otf: ${OTFONTS}
 .PHONY: dist
 dist: ${PKGS}
 
-InconsolataLGC.tar.xz: ${FONTS} ${DOCUMENTS}
+InconsolataLGCKM.tar.xz: ${FONTS} ${DOCUMENTS}
 	${TTFPKGCMD}; tar cfvJ $@ $*
-InconsolataLGC.tar.gz: ${FONTS} ${DOCUMENTS}
+InconsolataLGCKM.tar.gz: ${FONTS} ${DOCUMENTS}
 	${TTFPKGCMD}; tar cfvz $@ $*
-InconsolataLGC.tar.bz2: ${FONTS} ${DOCUMENTS}
+InconsolataLGCKM.tar.bz2: ${FONTS} ${DOCUMENTS}
 	${TTFPKGCMD}; tar cfvj $@ $*
-InconsolataLGC.zip: ${FONTS} ${DOCUMENTS}
+InconsolataLGCKM.zip: ${FONTS} ${DOCUMENTS}
 	${TTFPKGCMD}; zip -9r $@ $*
 
-InconsolataLGC-OT.tar.xz: ${OTFONTS} ${DOCUMENTS}
+InconsolataLGCKM-OT.tar.xz: ${OTFONTS} ${DOCUMENTS}
 	${OTFPKGCMD}; tar cfvJ $@ $*
-InconsolataLGC-OT.tar.gz: ${OTFONTS} ${DOCUMENTS}
+InconsolataLGCKM-OT.tar.gz: ${OTFONTS} ${DOCUMENTS}
 	${OTFPKGCMD}; tar cfvz $@ $*
-InconsolataLGC-OT.tar.bz2: ${OTFONTS} ${DOCUMENTS}
+InconsolataLGCKM-OT.tar.bz2: ${OTFONTS} ${DOCUMENTS}
 	${OTFPKGCMD}; tar cfvj $@ $*
-InconsolataLGC-OT.zip: ${OTFONTS} ${DOCUMENTS}
+InconsolataLGCKM-OT.zip: ${OTFONTS} ${DOCUMENTS}
 	${OTFPKGCMD}; zip -9r $@ $*
 
 ChangeLog: .git # GIT
